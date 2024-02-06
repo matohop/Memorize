@@ -109,8 +109,7 @@ struct EmojiMemoryGameView: View {
                     .zIndex(zIndex(of: card))
             }
         }
-        // generally using magic numbers as arguments to frame(width:height:)
-        // should be avoided
+        // generally using magic numbers as arguments to frame(width:height:) should be avoided
         // much better to let Views naturally lay themselves out if possible
         // but here, it's not clear what the "natural size" of a deck would be
         .frame(width: CardConstants.undealtWidth, height: CardConstants.undealtHeight)
